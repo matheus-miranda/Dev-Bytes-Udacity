@@ -41,4 +41,8 @@ class RefreshDataWorker(context: Context, params: WorkerParameters) :
             Result.retry()
         }
     }
+
+    companion object {
+        const val WORK_NAME = "RefreshDataWorker"
+    }
 }
